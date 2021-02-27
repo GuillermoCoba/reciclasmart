@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <navbarverde />
+<vue-page-transition name="fade">
+  <router-view />
+</vue-page-transition>
+    
   </div>
 </template>
 
@@ -30,3 +30,11 @@
   color: #42b983;
 }
 </style>
+<script>
+import navbarverde from '@/components/navbarverde.vue'
+export default  {
+  components:{
+    navbarverde
+  }
+}
+</script>
